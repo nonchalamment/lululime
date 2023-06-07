@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block head %}
+<link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}"/>
+{% endblock %}
+
+{% block content %}
+
+<section class="logo-container">
+  <div class="cat-container">
+    <img src="{% static 'images/lime.svg' %}" alt="The lime logo" />
+  </div>
+  <h2>LuluLime</h2>
+  <p>A simple way to organize your Lululemon collection!</p>
+</section>
+
+{% endblock %}

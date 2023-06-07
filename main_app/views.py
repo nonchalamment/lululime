@@ -1,10 +1,20 @@
 from django.shortcuts import render
+from .models import Clothing
 
-from django.http import HttpResponse
+closet = [
+  Clothing('Energy Bra', 'Sports Bra', 'Luxtreme', 68),
+  Clothing('Align Pant HR 25in', 'Leggings', "Nulu", 98),
+  Clothing('Invigorate HR Short 10in', 'Shorts', "Everlux", 68),
+  Clothing('Court Rival HR Skirt', 'Skirt', "Swift", 68)
+]
 
 # Create your views here.
 def home(request):
-  return HttpResponse('<h1>Hello Lulu fans!</h1>')
+  return render(request, 'home.html')
 
 def about(request):
   return render(request, 'about.html')
+
+def clothing_index(request):
+  closet = Clothing.objects.all()
+  return render(request, 'closet/index.html', { 'closet': closet })
