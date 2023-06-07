@@ -1,0 +1,74 @@
+@font-face {
+  font-family: Nunito;
+  font-weight: 300;
+  src: url(../fonts/Nunito.ttf);
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Nunito;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  background-color: black;
+}
+
+main {
+  width: 100%;
+  padding: 0 10px;
+}
+
+nav {
+  margin: 10px 0;
+  padding: 0 15px;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul {
+  flex-wrap: nowrap;
+}
+
+ul {
+  margin: 0;
+  list-style: none;
+  padding: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: var(--text-color);
+  font-weight: 600;
+  font-size: 16px;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav li {
+  padding: 5px 8px;
+}
+
+.header-logo-container {
+  max-width: 500px;
+  margin: 0 auto;
+}
