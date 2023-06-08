@@ -22,7 +22,7 @@
     <h1>{{ clothing.name }}</h1>
     <h2>{{ clothing.material }} {{ clothing.category }}</h2>
     <p>MSRP ${{ clothing.msrp }}</p>
-    <div class="cat-actions">
+    <div class="clothing-actions">
       <a href="{% url 'clothing-update' clothing.id %}" class="btn warn">Edit</a>
       <a href="{% url 'clothing-delete' clothing.id %}" class="btn danger">Delete</a>
     </div>

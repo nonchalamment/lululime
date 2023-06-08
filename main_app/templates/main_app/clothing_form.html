@@ -8,7 +8,11 @@
 {% block content %}
 
 <div class="page-header">
-  <h1>Add an Item</h1>
+  {% if clothing %}
+    <h1>Edit {{ clothing.name }}</h1>
+  {% else %}
+    <h1>Add an Item</h1>
+  {% endif %}
 </div>
 <form action="" method="post" class="form-container">
   {% csrf_token %}
