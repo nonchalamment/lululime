@@ -29,10 +29,16 @@
       </div>
       <nav>
         <ul>
-          <li><a href="{% url 'clothing-index' %}">Closet</a></li>
-          <li><a href="{% url 'clothing-create' %}">Add an Item</a></li>
-          <li><a href="{% url 'about' %}">About</a></li>
-        </ul>
+          {% if user.is_authenticated %}
+            <li><a href="{% url 'clothing-index' %}">Closet</a></li>
+            <li><a href="{% url 'clothing-create' %}">Add an Item</a></li>
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'logout' %}">Log Out</a></li>
+          {% else %}
+            <li><a href="{% url 'about' %}">About</a></li>
+            <li><a href="{% url 'home' %}">Login</a></li>
+            <li><a href="{% url 'signup' %}">Sign Up</a></li>
+          {% endif %}
       </nav>
     </header>
     <main>
