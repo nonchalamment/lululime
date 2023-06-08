@@ -1,4 +1,5 @@
 from django.shortcuts import render
+from django.views.generic.edit import CreateView
 from .models import Clothing
 
 closet = [
@@ -18,3 +19,11 @@ def about(request):
 def clothing_index(request):
   closet = Clothing.objects.all()
   return render(request, 'closet/index.html', { 'closet': closet })
+
+def clothing_detail(request, clothing_id):
+  clothing = Clothing.objects.get(id=clothing_id)
+  return render(request, 'closet/detail.html', { 'clothing': clothing })
+
+class ClothingCreate(CreateView):
+  model = Clothing
+  fields = '__all__'

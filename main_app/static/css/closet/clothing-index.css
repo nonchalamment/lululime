@@ -12,6 +12,15 @@
   box-shadow: var(--card-box-shadow);
 }
 
+.page-header {
+  display: flex;
+  width: 80%;
+  padding: 0 30px;
+  margin: 0 auto;
+  justify-content: flex-start;
+}
+
+
 .card-content {
   padding: 10px;
   width: 100%;

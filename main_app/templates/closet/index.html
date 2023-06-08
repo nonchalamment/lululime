@@ -18,18 +18,20 @@
 <section class="card-container">
   {% for clothing in closet %}
     <div class="card">
-      <div class="card-content">
-        <div class="card-img-container">
-          <img 
-            src="{% static 'images/lime.svg' %}" 
-            alt="A lime"
-          >
+      <a href="{% url 'clothing-detail' clothing.id %}">
+        <div class="card-content">
+          <div class="card-img-container">
+            <img 
+              src="{% static 'images/lime.svg' %}" 
+              alt="A lime"
+            >
+          </div>
+          <h2 class="card-title">{{ clothing.name }}</h2>
+          <p>{{ clothing.category }}</p>
+          <p>Material: {{ clothing.material }}</p>
+          <p><small>MSRP ${{ clothing.msrp }}</small></p>
         </div>
-        <h2 class="card-title">{{ clothing.name }}</h2>
-        <p>{{ clothing.category }}</p>
-        <p>Material: {{ clothing.material }}</p>
-        <p><small>MSRP ${{ clothing.msrp }}</small></p>
-      </div>
+      <a>
     </div>
   {% endfor %}
 </section>

@@ -21,8 +21,9 @@ body {
   flex-direction: column;
   align-items: center;
   min-height: 100vh;
-  --header-bg: rgb(221, 221, 221);
-  --borders: rgb(199, 199, 199);
+  --header-bg: rgb(233, 233, 233);
+  --borders: rgb(155, 155, 155);
+  --card-box-shadow: 2px 2px 4px rgb(199, 199, 199), -2px -2px 4px rgb(199, 199, 199);
 }
 
 header {

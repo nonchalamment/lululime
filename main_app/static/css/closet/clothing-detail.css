@@ -1,0 +1,23 @@
+.clothing-container {
+  margin: 10px 0px;
+  padding: 35px 30px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  box-shadow: var(--card-box-shadow);
+}
+
+.clothing-img {
+  width: 50%;
+  max-width: 350px;
+  align-self: space-evenly;
+}
+
+.clothing-details {
+  width: 98%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
