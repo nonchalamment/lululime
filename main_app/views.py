@@ -1,5 +1,5 @@
 from django.shortcuts import render
-from django.views.generic.edit import CreateView
+from django.views.generic.edit import CreateView, UpdateView, DeleteView
 from .models import Clothing
 
 closet = [
@@ -27,3 +27,11 @@ def clothing_detail(request, clothing_id):
 class ClothingCreate(CreateView):
   model = Clothing
   fields = '__all__'
+
+class ClothingUpdate(UpdateView):
+  model = Clothing
+  fields = ['category', 'material', 'msrp']
+
+class ClothingDelete(DeleteView):
+  model = Clothing
+  success_url = '/closet/'
