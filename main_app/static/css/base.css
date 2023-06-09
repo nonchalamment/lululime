@@ -81,3 +81,17 @@ header img {
   margin: 0 auto;
   padding: 15px 0px;
 }
+
+.btn {
+  font-size: 1.25rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  border-width: 2px;
+  border-style: solid;
+  text-decoration: none;
+  background-color: rgb(155, 155, 155);
+  font-weight: 600;
+  cursor: pointer;
+  font-family: inherit;
+  margin-right: 10px;
+}

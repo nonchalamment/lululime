@@ -19,7 +19,7 @@ main > section {
   max-width: 375px;
 }
 
-.cat-container {
+.clothing-container {
   width: 80%;
 }
 
@@ -44,12 +44,10 @@ main > section {
 }
 
 .login label {
-  font-size: var(--font-reg);
   margin-bottom: 6px;
 }
 
 .login input {
-  font-size: var(--font-l);
   padding: 2px 4px;
 }
 
@@ -80,3 +78,4 @@ main > section {
     max-width: 520px;
   }
 }
+
