@@ -12,7 +12,7 @@ Lululime is a Django/Python app using a PostgreSQL database that allows you to c
 [Nunito](https://fonts.google.com/specimen/Nunito) designed by Vernon Adams, Cyreal, and Jacques Le Bailly
 
 ## Technologies Used
-<li>>Django</li>
+<li>Django</li>
 <li>Python</li>
 <li>PostgreSQL</li>
 <li>Docker</li>
